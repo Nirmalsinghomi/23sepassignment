@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment01</title>
+</head>
+<body>
+    <h3>que 2. "Build an html page with multiple paragraph each assigned a unique class name . Write CSS rules using class selectors to apply distinct styling to each paragraph . Follow the BEM naming convention and explain how you.ve named the classes"  and the answer is given below</h3>
+    
+    <p>Certainly! Here's an example of an HTML page with multiple paragraphs, each assigned a unique class name following the BEM naming convention. I'll also provide CSS rules using class selectors to apply distinct styling to each paragraph, and I'll explain how I've named the classes based on BEM.</p>
+
+    <p class="paragraph paragraph--important">
+        <span class="paragraph__header">Important Note:</span> 
+        <span class="paragraph__content">This paragraph is important.</span>
+    </p>
+
+    <p class="paragraph">
+        <span class="paragraph__header">Regular Note:</span> 
+        <span class="paragraph__content">This paragraph is regular.</span>
+    </p>
+
+    <p class="paragraph">
+        <span class="paragraph__header">Another Note:</span> 
+        <span class="paragraph__content">This paragraph is also regular.</span>
+    </p>
+
+    <p> In this example:
+        <ul>
+            <li>.paragraph: This is a block-level class representing a generic paragraph. It sets basic styles shared among all paragraphs.</li>
+            <li>.paragraph--important: This is a modifier class applied to the first paragraph, indicating it is important. It modifies the font weight to make the text bold.</li>
+            <li>
+                .paragraph__header and .paragraph__content: These are element-level classes representing parts of the paragraph block. .paragraph__header styles the header part of the paragraph (e.g., "Important Note"), and .paragraph__content styles the content part of the paragraph (e.g., "This paragraph is important."). These classes are nested inside the .paragraph block to indicate their relationship.
+            </li>
+        </ul>
+    </p>
+    <p>
+        Following BEM, the classes are named based on the block (.paragraph) and its elements (.paragraph__header and .paragraph__content). The modifier class (.paragraph--important) is used to modify the appearance of a specific instance of the block. This naming convention provides clear and meaningful names, making it easier to understand the structure and purpose of the HTML elements and their corresponding CSS styles.
+    </p> <br><hr>
+
+</body>
+</html>
